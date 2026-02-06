@@ -1,0 +1,269 @@
+{
+	"id": "09862a7e-fa47-444c-8808-1b6a1624953f",
+	"name": "Exercício 13 completo",
+	"timestamp": "2026-02-06T16:40:24.378Z",
+	"collection_id": "51832641-8f719e15-6cff-4510-9506-b9405c045d6a",
+	"folder_id": "51832641-10df7c6d-c828-4f7c-8828-619744c6ff60",
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-02-06T16:40:22.772Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "3d98dda9-5aa8-475f-aacf-31069e97f245",
+			"name": "Listar usuários cadastrados",
+			"url": "http://localhost:3000 /usuarios",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Deve validar se o status code é  200": true
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é  200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é  200": true
+				}
+			]
+		},
+		{
+			"id": "5e6786a8-f42f-40a8-926b-69df8d6784ad",
+			"name": "Buscar usuário por ID",
+			"url": "http://localhost:3000/usuarios/0uxuPY0cbmQhpEz1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Deve validar se o status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "f3c1bd71-0c06-4a5e-8553-6fda83a9d7ae",
+			"name": "Realizar login",
+			"url": "http://localhost:3000/login",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Deve validar se o status code é 200": true,
+				"Deve validar mensagem de sucesso": true
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar mensagem de sucesso": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é 200": true,
+					"Deve validar mensagem de sucesso": true
+				}
+			]
+		},
+		{
+			"id": "976aab73-cf33-4cd4-bf91-6cf98cc5aec1",
+			"name": "Cadastrar  usuário com email inválido",
+			"url": "http://localhost:3000/usuarios",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Deve validar se o status code é 400": true,
+				"Deve validar a mensagem de erro": true
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a mensagem de erro": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é 400": true,
+					"Deve validar a mensagem de erro": true
+				}
+			]
+		},
+		{
+			"id": "bf802c61-8f44-4d18-b835-dc8f5a4ef717",
+			"name": "Cadastrar usuário",
+			"url": "http://localhost:3000 /usuarios",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Deve validar se o status code é 201": true,
+				"Deve validar a mensagem de sucesso": true
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a mensagem de sucesso": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é 201": true,
+					"Deve validar a mensagem de sucesso": true
+				}
+			]
+		},
+		{
+			"id": "2606f9a1-794a-4c30-a1fb-07676cd45fe0",
+			"name": "Editar usuário",
+			"url": "http://localhost:3000/usuarios/qKAAbN9dITSyBn84",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Deve validar se o status code é 200": false,
+				"Deve validar mensagem de sucesso": false
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Deve validar mensagem de sucesso": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é 200": false,
+					"Deve validar mensagem de sucesso": false
+				}
+			]
+		},
+		{
+			"id": "2d236a1b-9d60-4dac-a049-24a3b9044414",
+			"name": "Excluir usuário",
+			"url": "http://localhost:3000/usuarios/qKAAbN9dITSyBn84",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Deve validar se o status code é 200": true,
+				"Deve validar mensagem de sucesso": true
+			},
+			"testPassFailCounts": {
+				"Deve validar se o status code é 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar mensagem de sucesso": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Deve validar se o status code é 200": true,
+					"Deve validar mensagem de sucesso": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 45,
+	"collection": {
+		"requests": [
+			{
+				"id": "3d98dda9-5aa8-475f-aacf-31069e97f245",
+				"method": "GET"
+			},
+			{
+				"id": "5e6786a8-f42f-40a8-926b-69df8d6784ad",
+				"method": "GET"
+			},
+			{
+				"id": "f3c1bd71-0c06-4a5e-8553-6fda83a9d7ae",
+				"method": "POST"
+			},
+			{
+				"id": "976aab73-cf33-4cd4-bf91-6cf98cc5aec1",
+				"method": "POST"
+			},
+			{
+				"id": "bf802c61-8f44-4d18-b835-dc8f5a4ef717",
+				"method": "POST"
+			},
+			{
+				"id": "2606f9a1-794a-4c30-a1fb-07676cd45fe0",
+				"method": "PUT"
+			},
+			{
+				"id": "2d236a1b-9d60-4dac-a049-24a3b9044414",
+				"method": "DELETE"
+			}
+		]
+	}
+}
